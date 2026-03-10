@@ -38,35 +38,40 @@ npm install -g @anthropic-ai/claude-code
 ### 1.3 配置硅基流动 API (关键步骤)
 
 **重要:** 硅基流动提供免费的 API 额度，适合学习和测试。
-
+**获取 API Key:**
+1. 访问 [硅基流动控制台](https://cloud.siliconflow.cn/i/NCHmBiGa)
+2. 注册/登录账号
+3. 进入 API Keys 页面创建新 Key
+4. 新用户注册赠送免费额度
+   
 ```bash
 # 设置环境变量 (添加到 ~/.bashrc 或 ~/.zshrc 永久生效)
 export ANTHROPIC_BASE_URL='https://api.siliconflow.cn/'
 export ANTHROPIC_API_KEY='sk-你的 API-KEY'
 export ANTHROPIC_MODEL='Qwen/Qwen3-Coder-480B-A35B-Instruct'
 
-# 验证配置
+# 验证配置 输出 2.1.59 (Claude Code)
 claude --version
+
+#进入查看模型 输出有 ·Qwen/Qwen3-Coder-480B-A35B-Instruct·即表示配置成功
+/model
+
 ```
-
-**获取 API Key:**
-1. 访问 [硅基流动控制台](https://cloud.siliconflow.cn/)
-2. 注册/登录账号
-3. 进入 API Keys 页面创建新 Key
-4. 新用户注册赠送免费额度
-
 ---
+
+
+**<span style="color:red">确保本地 Claude Code 是可用的，后面直接利用它帮你自动安装</span>**
 
 ## 阶段 2: 使用 Claude Code 安装 OpenClaw
 
 ### 2.1 安装 OpenClaw
 
-可以向 Claude Code 提问：
+首先到文件夹下`DeployOpenClawOnWSL`进入 Claude Code 提问：
 ```
-请帮我安装 OpenClaw v2026.3.2
+参考文档 @openclaw-complete-guide.md @openclaw-feishu-setup-guide.md @openclaw-install-config-guide.md   请帮我安装 OpenClaw v2026.3.2，安装好之后优先保证本地可用，然后再指导我链接飞书机器人，最后指导我怎么设定定时任务
 ```
 
-或者手动执行:
+或者手动执行[**<span style="color:red">不建议手动执行，利用 claude code 帮你安装</span>**]:
 
 ```bash
 npm install -g openclaw@2026.3.2
