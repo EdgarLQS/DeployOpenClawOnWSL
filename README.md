@@ -19,7 +19,7 @@
 | 3 | 飞书机器人集成 | 20 分钟 |
 | 4 | 定时任务创建 | 5 分钟 |
 
-**立即开始：** [完整集成指南](./openclaw-complete-guide.md)
+**立即开始：** [完整集成指南](./docs/openclaw-complete-guide.md)
 
 ---
 
@@ -28,16 +28,19 @@
 ```
 openclaw/
 ├── README.md                        # 本文件 - 快速入口
-├── openclaw-complete-guide.md       # 主入口指南 - 从这里开始
-├── openclaw-install-config-guide.md # OpenClaw 详细配置指南
-└── openclaw-feishu-setup-guide.md   # 飞书集成详细指南
+├── docs/
+│   ├── openclaw-complete-guide.md       # 主入口指南 - 从这里开始
+│   ├── openclaw-install-config-guide.md # OpenClaw 详细配置指南
+│   ├── openclaw-feishu-setup-guide.md   # 飞书集成详细指南
+│   └── openclaw-usage-log.md            # 使用记录 - Token 消耗与建议
 ```
 
 ### 应该先看哪个文档？
 
-1. **新手入门** → [`openclaw-complete-guide.md`](./openclaw-complete-guide.md)
-2. **遇到安装问题** → [`openclaw-install-config-guide.md`](./openclaw-install-config-guide.md)
-3. **配置飞书机器人** → [`openclaw-feishu-setup-guide.md`](./openclaw-feishu-setup-guide.md)
+1. **新手入门** → [`docs/openclaw-complete-guide.md`](./docs/openclaw-complete-guide.md)
+2. **遇到安装问题** → [`docs/openclaw-install-config-guide.md`](./docs/openclaw-install-config-guide.md)
+3. **配置飞书机器人** → [`docs/openclaw-feishu-setup-guide.md`](./docs/openclaw-feishu-setup-guide.md)
+4. **使用记录与 Token 消耗** → [`docs/openclaw-usage-log.md`](./docs/openclaw-usage-log.md)
 
 ---
 
@@ -114,7 +117,7 @@ openclaw pairing approve feishu XXXX   # 批准配对
 | 飞书长连接失败 | 先启动 Gateway，再保存事件订阅 |
 | 搜索不可用 | 配置 Tavily API Key |
 
-详细解决方案见：[常见问题排查](./openclaw-install-config-guide.md#7-常见问题与解决方案)
+详细解决方案见：[常见问题排查](./docs/openclaw-install-config-guide.md#7-常见问题与解决方案)
 
 ---
 
@@ -139,4 +142,4 @@ MIT License
 
 ---
 
-**文档更新时间**: 2026-03-10
+**文档更新时间**: 2026-03-12
